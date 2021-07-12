@@ -1,0 +1,272 @@
+$color-title: #051497de
+$color-span: #757070bd
+$color-text: #95045ee7
+$white: #ffffff
+
+html
+    box-sizing: border-box
+    font-size: 62.5% // 1 rem = 10 px
+
+    body
+        padding-top: 3rem
+        background-color: rgba(0, 0, 0, 0.116)
+        .container
+            background-color: #fff
+            font-family: 'Roboto', sans-serif
+            display: grid
+            grid-template-rows: 15% 75% 10%
+            width: 90%
+            max-width: 95%
+            height: 1000px
+            margin: auto
+            border: 1px solid $white
+            border-radius: 2rem 2rem 0 0
+            @media screen and ( max-width: 1450px )
+                grid-template-rows: repeat(3, auto)
+                @media screen and ( max-width: 910px )
+                    grid-template-rows: auto auto auto
+
+            .header
+                background-color: #0f4e81
+                border-radius: 1rem 1rem 0 0
+                text-transform: uppercase
+                display: grid
+                grid-template-rows: repeat(2, auto)
+                &-logo
+                    width: 100%
+                    height: 100%
+                    text-align: center
+                    .logo-title
+                        font-size: 5rem
+                        color: #fff
+                        font-family: 'Rosarivo', serif
+                        @media screen and ( max-width: 910px )
+                            font-size: 4rem
+            .main
+                display: grid
+                grid-template-columns: 40% 60%
+                height: 791px
+                @media screen and ( max-width: 1450px )
+                    height: 700px
+                    @media screen and ( max-width: 910px )
+                        width: 100%
+                .row-card
+                    display: grid
+                    grid-template-rows: 75% 25%
+                    @media screen and ( max-width: 1450px )
+                        display: block
+
+                    #container-card
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        @media screen and ( max-width: 1450px )
+                            display: block
+                            margin: 2rem 0 0 5rem
+                            @media screen and ( max-width: 1450px )
+                                margin: 4rem 0 0 2rem
+                                @media screen and ( max-width: 910px )
+                                    margin: 4rem 0 0 0
+                    .card
+                        background-color: white
+                        border-radius: 10px
+                        max-width: 305px
+                        height: 430px
+                        box-shadow: 7px 5px 5px #302b63e5
+                        border: 1px solid #000
+                        @media screen and ( max-width: 1450px )
+                            max-width: 255px
+                            height: 350px
+                            @media screen and ( max-width: 910px )
+                                max-width: 200px
+                                height: 300px
+
+                        &-body
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            width: 310px
+                            text-transform: capitalize
+                            @media screen and ( max-width: 1450px )
+                                width: 250px
+                                @media screen and ( max-width: 910px )
+                                    width: 180px
+                            &-title
+                                color: $color-title
+                                font-size: 3rem
+                                text-transform: uppercase
+                                @media screen and ( max-width: 1450px )
+                                    font-size: 2rem
+                                    @media screen and ( max-width: 910px )
+                                        font-size: 1.5rem
+                            span
+                                color: $color-span
+                                font-size: 2.5rem
+                                font-weight: 700
+                                @media screen and ( max-width: 1450px )
+                                    font-size: 2rem
+                                    @media screen and ( max-width: 910px )
+                                        font-size: 1.2rem
+                                        margin-bottom: 0.5rem
+                            &-text
+                                font-size: 1.8rem
+                                margin-bottom: 6rem
+                                margin-top: -1rem
+                                font-weight: 700
+                                color: $color-text
+                                text-align: center
+                                @media screen and ( max-width: 1450px )
+                                    margin-bottom: 4rem
+                                    margin-top: 1rem
+                                    @media screen and ( max-width: 910px )
+                                        margin-bottom: 1rem
+                                        font-size: 1.4rem
+                            &-image
+                                width: 200px
+                                height: 200px
+                                background-repeat: none
+                                background-size: cover
+                                margin-top: 1rem
+                                @media screen and ( max-width: 1450px )
+                                    width: 170px
+                                    height: 170px
+                                    @media screen and ( max-width: 910px )
+                                        width: 140px
+                                        height: 140px
+                        &-footer
+                            display: flex
+                            justify-content: space-around
+                            background-color: #360033
+                            height: 67px
+                            border-radius: 0 0 10px 10px
+                            @media screen and ( max-width: 1450px )
+                                height: 55px
+                            &-details
+                                height: 6rem
+                                text-align: center
+                                color: white
+                                h3
+                                    margin-bottom: 0.5rem
+                                    font-size: 2rem
+                                    @media screen and ( max-width: 1450px )
+                                        font-size: 1.4rem
+                                        @media screen and ( max-width: 1450px )
+                                            font-size: 1.2rem
+                                            margin-bottom: 0.2rem
+                                span
+                                    font-size: 1.1rem
+                    .actions-btn
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        @media screen and ( max-width: 1450px )
+                            display: block
+                            text-align: center
+                        .btn
+                            font-size: 2.5rem
+                            font-weight: 600
+                            border: none
+                            border-radius: 1rem
+                            width: 26%
+                            cursor: pointer
+                            padding: 1.5rem 0
+                            color: white
+                            @media screen and ( max-width: 1450px )
+                                font-size: 2rem
+                                font-weight: 500
+                                width: 50%
+                                margin-top: 4rem
+                                @media screen and ( max-width: 910px )
+                                    padding: 1rem
+                                    width: 100%
+                        .btn-change
+                            background-color: #260fac
+                            margin-bottom: 1rem
+                            @media screen and ( max-width: 910px )
+                                margin-bottom: 1rem
+                                margin-top: 2rem
+                        .btn-save
+                            background-color: #0c995e
+                #list-poke
+                    width: 100%
+                    display: grid
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+                    grid-template-rows: repeat(3, auto)
+                    column-gap: 2rem
+                    justify-items: center
+                    align-items: center
+                    text-align: center
+                    @media screen and ( max-width: 910px )
+                        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr))
+                        column-gap: 0
+                    .pokemon
+
+                        .pokemon-img
+                            background-color: #98b8db
+                            height: 165px
+                            width: 165px
+                            border-radius: 50%
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            justify-content: center
+                            @media screen and ( max-width: 1450px )
+                                height: 140px
+                                width: 140px
+                                @media screen and ( max-width: 910px )
+                                    height: 70px
+                                    width: 70px
+                                    margin-top: 0.5rem
+
+                        .btn-supr
+                            font-size: 2rem
+                            border: none
+                            color: $white
+                            background-color: #690591
+                            cursor: pointer
+                            @media screen and ( max-width: 1450px )
+                                font-size: 1.5rem
+                        .imagen
+                            width: 100px
+                            height: 100px
+                            margin-bottom: 1rem
+                            @media screen and ( max-width: 1450px )
+                                width: 80px
+                                height: 80px
+                                @media screen and ( max-width: 910px )
+                                    width: 50px
+                                    height: 50px
+                                    margin-bottom: 0.2rem
+                        span
+                            font-size: 1.7rem
+                            font-weight: bold
+                            color: #360033
+                            @media screen and ( max-width: 1450px )
+                                font-size: 1rem
+                        p
+                            font-size: 2rem
+                            font-weight: 600
+                            margin: 1rem 0
+                            color: #360033
+                            text-transform: uppercase
+                            text-align: center
+                            @media screen and ( max-width: 1450px )
+                                font-size: 1rem
+                                @media screen and ( max-width: 910px )
+                                    margin: 0.5rem
+
+            .footer
+                background-color: #02013d
+                height: 100%
+                width: 100%
+                text-align: center
+                padding-top: 3rem
+                text-transform: capitalize
+                color: #fff
+                @media screen and ( max-width: 1450px )
+                    margin-top: 2rem
+                p
+                    font-size: 2rem
+                    @media screen and ( max-width: 910px )
+                        font-size: 1.2rem
+                        margin-top: 4rem
